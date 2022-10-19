@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "demo-model-validation"
+version = "0.1.0"
+description = ""
+authors = ["Sunniva Indrehus <sunniva.indrehus@ngi.no>"]
+readme = "README.md"
+packages = [{include = "demo_model_validation"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^1.10.2"
+pandas = "^1.5.1"
+pandera = "^0.13.3"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^2.20.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
