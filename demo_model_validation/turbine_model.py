@@ -15,13 +15,17 @@ class TurbineModel(BaseModel):
     )
 
 
-soil_layers = [
-    {"depth": 0, "number_of_elements": 2},
-    {"depth": 2, "number_of_elements": 3},
-]
+if __name__ == "__main__":
 
-simulation_steps = -20
+    soil_layers = [
+        {"depth": 0, "number_of_elements": 2},
+        {"depth": 2, "number_of_elements": 3},
+    ]
 
-turbine_model = TurbineModel(soil_layers=soil_layers, load_step_num=simulation_steps)
+    simulation_steps = 20
 
-print(f"My turbine model: {turbine_model}")
+    turbine_model = TurbineModel(
+        soil_layers=soil_layers, load_step_num=simulation_steps
+    )
+
+    print(f"My turbine model: {turbine_model}")
