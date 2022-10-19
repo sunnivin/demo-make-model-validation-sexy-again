@@ -1,6 +1,6 @@
 # Demo make model validation sexy again
 
-This repository contains some simple examples of how you can use `pydantic`and `pandera` for data model validation.
+This repository contains some simple examples of how you can use [`pydantic`](https://pydantic-docs.helpmanual.io/) and [`pandera`](https://pandera.readthedocs.io/en/stable/dataframe_schemas.html) for data model validation.
 
 ## Usage
 Start with activating the virtual environment and installing needed packages from the `pyproject.toml` and `poetry.lock`
